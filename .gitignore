@@ -20,7 +20,7 @@ mvnw.cmd
 # Package Files #
 *.jar
 *.war
-*.nar
+*.nar()
 *.ear
 *.zip
 *.tar.gz
