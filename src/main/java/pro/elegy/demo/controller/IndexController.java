@@ -9,12 +9,13 @@ import pro.elegy.demo.entity.TestStudent;
 @RestController
 public class IndexController {
     @Autowired
-    private static Student student;
+    private  Student student;
     @Autowired
-    private static TestStudent teststudent;
+    private  TestStudent teststudent;
 
 
-    public static void main(String[] args) {
-        System.out.println(teststudent.getName()+"，"+teststudent.getAge());
+    @RequestMapping("/")
+    public String index() {
+       return teststudent.getName()+"，"+teststudent.getAge();
     }
 }
